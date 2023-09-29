@@ -1,14 +1,14 @@
 # Docs-as-Code Demo
 
 For this demo we chose MkDocs hosted on read-the-docs to demonstrate how to set up a simple Docs-as-Code system in your repo.
-This guide will essentially be a quick run-through of the complete setup described in their respective documentations. 
+This guide will essentially be a quick run-through of the complete setup described in their respective documentation. 
 
 ## Guide
 
 ### Building the docs
 
 Assuming you have a git repository, the first step is installing the `mkdocs` package.
-For this you will need `pip` (Python package installer). Simply run:
+For this, you will need `pip` (Python package installer). Simply run:
 
 ```bash
 pip install mkdocs
@@ -23,7 +23,7 @@ mkdocs new .
 ```
 
 This will create a `docs` folder along with a `mkdocs.yml` configuration file.
-The `docs` folder will hold all of your markdown files, in other words your documentation.
+The `docs` folder will hold all of your markdown files, in other words, your documentation.
 
 We can now serve the docs and monitor the changes we make:
 
@@ -69,7 +69,7 @@ As we mentioned we will deploy the documentation to ReadtheDocs. You will need t
 
 Now before we connect our repository to ReadtheDocs we need another configuration file called `.readthedocs.yaml`. This simply tells ReadtheDocs how to handle your documentation.
 
-MkDocs is has a predefined configuration for ReadtheDocs so we will use some existing boilerplate configuration given to us from ReadtheDocs.
+MkDocs has a predefined configuration for ReadtheDocs so we will use some existing boilerplate configuration given to us from ReadtheDocs.
 
 ```yaml
 # Read the Docs configuration file for MkDocs projects
@@ -92,7 +92,7 @@ Once you have added this file to the root folder of your project, push your chan
 
 Deploying to ReadtheDocs can be done in two ways. You can manually import the project, or simply connect your GitHub account to your ReadtheDocs account. If you choose to import it manually, you will have to trigger the build each time a new version is deployed. Connecting your GitHub account will make sure deployments happen automatically from your watched branch.
 
-To do any of these two, once you are logged in, from the dashboard click `Import a Project` and follow the steps. once your build is complete you will be able to find check out your deployed docs.
+To do any of these two, once you are logged in, from the dashboard click `Import a Project` and follow the steps. once your build is complete you will be able to check out your deployed docs.
 For the docs of this project head to https://dac-demo.readthedocs.io/en/latest/.
 
 You are all set, happy documenting!
